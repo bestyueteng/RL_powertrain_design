@@ -1,10 +1,10 @@
-# Project Environment Setup
+# Overview
 
-This repository contains code that integrates Python, MATLAB, and several key Python packages. It is designed to run on both High-Performance Computing (HPC) systems and local development machines. Follow the instructions below that best match your environment.
+This repository implements a deep reinforcement learning framework for automated powertrain design in battery electric vehicles. The code integrates RL techniques with an extensive component library and functional constraints to efficiently explore and optimize complex system-level topologies, significantly reducing design time while achieving cost-effective solutions.
 
 ---
 
-## Overview
+## Project Environment Setup
 
 This project requires:
 - **Python 3.11** (specifically, Python/3.11.3-GCCcore-12.3.0 on HPC)
