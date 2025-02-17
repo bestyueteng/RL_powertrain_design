@@ -84,9 +84,10 @@ Or can be manually config using the instructions below:
 
 4. **Run the script**
 
-    ```
-    sbatch run.sh
-    ```
+```
+sbatch run.sh
+```
+
 ---
 
 ## Local Environment Setup
@@ -94,7 +95,7 @@ Or can be manually config using the instructions below:
 **Required Modules:**
   - `Python/3.11.3-GCCcore-12.3.0`
   - `MATLAB/2024b`
-  
+
 1. **Clone the repository**:
 
 ```

@@ -93,26 +93,25 @@ class PowertrainEnv_overall(gym.Env):
             for matrix in self.dsm_list:
                 if all(matrix[i][j] == 0 for i in self.invalid_row for j in self.invalid_row):
                     self.random_dsm_list.append(matrix)
-            # self.random_dsm_list = partial_init(self.components, self.power_types, self.random_dsm, self.valid_row)
+            self.random_dsm_list = partial_init(self.components, self.power_types, self.random_dsm, self.valid_row)
         
         else:
-            print("check1")
             check = 1
             self.new_components_library = self.init_component_library_fix.copy()
             
             if self.required_instances is not None:
                 self.new_components_library['Number of Instances'] = self.required_instances
-            print("check2")
+            
             self.valid_row = find_all_valid_rows(self.new_components_library, self.init_component_library_fix)
             self.invalid_row = [i for i in range(1, self.max_components) if i not in self.valid_row]
             self.new_components_library = dict_to_matrix(self.new_components_library)
             self.num_of_instances = self.new_components_library[2]
-            print("check3")
+            
             for matrix in self.dsm_list:
                 if all(matrix[i][j] == 0 for i in self.invalid_row for j in self.invalid_row):
                     self.random_dsm_list.append(matrix)
-            # self.random_dsm_list = partial_init(self.components, self.power_types, self.random_dsm, self.valid_row)
-            print("check4")
+            self.random_dsm_list = partial_init(self.components, self.power_types, self.random_dsm, self.valid_row)
+            
         # split training
         if self.random_dsm != 1: 
             if self.init_partial_topo is None:
