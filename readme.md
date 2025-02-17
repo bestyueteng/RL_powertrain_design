@@ -86,30 +86,31 @@ Or can be manually config using the instructions below:
 
     ```
     sbatch run.sh
-
     ```
 ---
 
 ## Local Environment Setup
 
+**Required Modules:**
+  - `Python/3.11.3-GCCcore-12.3.0`
+  - `MATLAB/2024b`
+  
 1. **Clone the repository**:
 
 ```
 git clone https://github.com/bestyueteng/RL_powertrain_design.git
 cd RL_powertrain_design
-
 ```
 
 2. **Install requirements**
-
+For python dependencies:
 ```
 pip install -r requirements.txt
-
 ```
+For Matlab, should add ``QSS_Toolbox_Full`` and ``topology_to_model`` repositories in your environmental path.
 
 3. Run the main.py with configs
 
 ```
 python main.py
-
 ```
