@@ -170,7 +170,7 @@ function generate_blocks(comclass, comtype, modelName, DSM, comconnectionstype, 
                 subclass = comconnectionstype{i}; % Get the type of connection components
                 
                 for j = 1:length(subclass)
-                    if subclass(j) == "GearSystems" || subclass(j) == "EnergyConverters" 
+                    if subclass(j) == "GearSystems" || subclass(j) == "EnergyConverters" || subclass(j) == "Controller"
                         torque_out = torque_out + 1;
                     end
                 end

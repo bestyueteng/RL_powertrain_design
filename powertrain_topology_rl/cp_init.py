@@ -358,13 +358,13 @@ def partial_init(components, power_types, random_dsm, valid_row=None):
     # model.Add(sum(used[i] for i in electric_motor_indices) >= 1)
     
     # ----------------------------------------
-    #  Constraint 11: 2 * (Used FD) + (#Gearboxes connected to TS) ? {2, 4}
+    #  Constraint 11: 2 * (Used FD) + (#Gearboxes connected to TS) + (Used TC) ? {2, 4}
     # ----------------------------------------
 
     # 1) Create an integer expression for "2 * sum_fd + sum_gb_conn_ts".
     # sum_fd is the sum of "used" variables for Final Drive.
     sum_fd = sum(used[fd_idx] for fd_idx in final_drive_indices)
-
+    
     # sum_gb_conn_ts is the count of gearboxes directly connected to a Torque Split component.
     # Because DSM[g, ts] is a BoolVar, summing them yields an IntVar expression.
     connections_g_ts = []
@@ -375,15 +375,23 @@ def partial_init(components, power_types, random_dsm, valid_row=None):
                 connections_g_ts.append(var)
     sum_gb_conn_ts = sum(connections_g_ts)
     
-    sum_fd_g_ts = 2 * sum_fd + sum_gb_conn_ts
+    connections_tc_ts = []
+    for tc in torque_coupler_indices:
+        for ts in torque_split_indices:
+            var = get_DSM(tc, ts)
+            if var is not None:
+                connections_tc_ts.append(var)
+    sum_tc_conn_ts = sum(connections_tc_ts)
+    
+    sum_fd_g_tc_ts = 2 * sum_fd + sum_gb_conn_ts + sum_tc_conn_ts
     eq_2 = model.NewBoolVar("eq_2")
     eq_4 = model.NewBoolVar("eq_4")
 
     # model.Add(sum_fd_g_ts == 2)
 
-    model.Add(sum_fd_g_ts == 2).OnlyEnforceIf(eq_2)
+    model.Add(sum_fd_g_tc_ts == 2).OnlyEnforceIf(eq_2)
 
-    model.Add(sum_fd_g_ts == 4).OnlyEnforceIf(eq_4)
+    model.Add(sum_fd_g_tc_ts == 4).OnlyEnforceIf(eq_4)
 
     # Disjunction: eq_2 OR eq_4
     model.AddBoolOr([eq_2, eq_4])

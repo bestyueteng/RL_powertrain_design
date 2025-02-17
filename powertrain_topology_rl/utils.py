@@ -221,10 +221,11 @@ def generate_constraints(node_classes, node_types, num_components):
     constraints.append(constraint_10)
     
     def constraint_11(DSM):
-        # 2*final drive + gearbox which connects to torque split should be 2 or 4
+        # 2*final drive + gearbox + TC which connects to torque split should be 2 or 4
         final_drive_indices = [idx for idx, cls in node_types.items() if cls == "Final Drive" and any(DSM[idx])]
         gearbox_indices = [idx for idx, cls in node_classes.items() if cls == "GearSystems" and any(DSM[idx])]
         torque_split_indices = [idx for idx, cls in node_types.items() if cls == "Torque Split" and any(DSM[idx])]
+        torque_coupler_indices = [idx for idx, cls in node_types.items() if cls == "Torque Coupler" and any(DSM[idx])]  
         num_fd = 0
         for fd_idx in final_drive_indices:
             num_fd += sum(DSM[fd_idx])
@@ -234,7 +235,12 @@ def generate_constraints(node_classes, node_types, num_components):
                 # check if connected with torque split
                 if any(DSM[gb_idx][torque_split_indices]):
                     num_gearbox += sum(DSM[gb_idx])
-        if 2*num_fd + num_gearbox == 2 or 2*num_fd + num_gearbox == 4:
+        num_tc = 0
+        for tc_idx in torque_coupler_indices:
+            if any(DSM[tc_idx][torque_split_indices]):
+                num_tc += sum(DSM[tc_idx])
+
+        if 2*num_fd + num_gearbox + num_tc == 2 or 2*num_fd + num_gearbox + num_tc == 4:
             return True
         else:
             return False

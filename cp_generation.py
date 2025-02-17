@@ -396,16 +396,25 @@ def main():
             if var is not None:
                 connections_g_ts.append(var)
     sum_gb_conn_ts = sum(connections_g_ts)
+
+    connections_tc_ts = []
+    for tc in torque_coupler_indices:
+        for ts in torque_split_indices:
+            var = get_DSM(tc, ts)
+            if var is not None:
+                connections_tc_ts.append(var)
+    sum_tc_conn_ts = sum(connections_tc_ts)
     
-    sum_fd_g_ts = 2 * sum_fd + sum_gb_conn_ts
+    sum_fd_g_tc_ts = 2 * sum_fd + sum_gb_conn_ts + sum_tc_conn_ts
+
     eq_2 = model.NewBoolVar("eq_2")
     eq_4 = model.NewBoolVar("eq_4")
 
     # model.Add(sum_fd_g_ts == 2)
 
-    model.Add(sum_fd_g_ts == 2).OnlyEnforceIf(eq_2)
+    model.Add(sum_fd_g_tc_ts == 2).OnlyEnforceIf(eq_2)
 
-    model.Add(sum_fd_g_ts == 4).OnlyEnforceIf(eq_4)
+    model.Add(sum_fd_g_tc_ts == 4).OnlyEnforceIf(eq_4)
 
     # Disjunction: eq_2 OR eq_4
     model.AddBoolOr([eq_2, eq_4])
