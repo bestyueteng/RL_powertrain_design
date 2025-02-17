@@ -1,0 +1,16 @@
+/.vscode
+/check_models
+/cp_2333_test.csv
+/cp_generation_2333.txt
+/cp_generation_3444.txt
+/cp_generation_3444_test.txt
+/cp_generation_test_2333.txt
+/eval_overall_mlp_icm_2007216.zip
+/eval_overall_split_mlp_2007185.zip
+/git_upload.sh
+/logs&outputs
+/overall_origin_mlp_currentbest.zip
+/VehiclePowertrain.slx.autosave
+/powertrain_topology_rl/__pycache__/
+/python_venv
+/slprj

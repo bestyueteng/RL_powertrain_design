@@ -1,0 +1,218 @@
+site_name: "CORE"
+site_url: https://docs.rllte.dev/
+copyright: Copyright &copy; 2023 Reinforcement Learning Evolution Foundation
+theme:
+  name: material
+  logo: assets/images/logo_horizontal.svg
+  favicon: assets/images/rllte-favicon.png
+  palette:
+    - scheme: white
+      primary: white
+      accent: white
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+        
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - content.code.select
+    - content.code.copy
+    - content.code.select
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+repo_url: https://github.com/RLE-Foundation/rllte
+repo_name: RLE-Foundation/rllte
+
+extra:
+  social: 
+    - icon: fontawesome/brands/github
+      link: https://github.com/RLE-Foundation/rllte
+    - icon: fontawesome/solid/paper-plane
+      link: friedrichyuan19990827@gmail.com
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/rllte-core/
+  
+nav:
+  - Overview: 
+    - Overview: index.md
+    - White Paper: assets/pdf/White Paper.pdf
+    - Changelog: changelog.md
+    - Contribution: contributing.md
+    - License: license.md
+
+  - Getting Started:
+    - Installation: getting_started.md
+    - Verification: verification.md
+  
+  - Tutorials: tutorials/index.md
+
+  - API Documentation:
+    - Overview: api.md
+    - Common: 
+      - Prototypes:
+        - BaseAgent: api_docs/common/prototype/base_agent.md
+        - OnPolicyAgent: api_docs/common/prototype/on_policy_agent.md
+        - OffPolicyAgent: api_docs/common/prototype/off_policy_agent.md
+        - DistributedAgent: api_docs/common/prototype/distributed_agent.md
+        - BasePolicy: api_docs/common/prototype/base_policy.md
+        - BaseEncoder: api_docs/common/prototype/base_encoder.md
+        - BaseStorage: api_docs/common/prototype/base_storage.md
+        - BaseDistribution: api_docs/common/prototype/base_distribution.md
+        - BaseAugmentation: api_docs/common/prototype/base_augmentation.md
+        - BaseIntrinsicRewardModule: api_docs/common/prototype/base_reward.md
+      - Auxiliaries:
+        - Logger: api_docs/common/logger.md
+        - Timer: api_docs/common/timer.md
+        - Preprocessing: api_docs/common/preprocessing.md
+        - Initialization: api_docs/common/initialization.md
+
+    - Agent:
+      - Legacy:
+        - PPO: api_docs/agent/legacy/ppo.md
+        - A2C: api_docs/agent/legacy/a2c.md
+        - DQN: api_docs/agent/legacy/dqn.md
+        - SAC: api_docs/agent/legacy/sac.md
+        - SACDiscrete: api_docs/agent/legacy/sacd.md
+        - DDPG: api_docs/agent/legacy/ddpg.md
+        - TD3: api_docs/agent/legacy/td3.md
+      - Current:
+        - DrQv2: api_docs/agent/drqv2.md
+        - DAAC: api_docs/agent/daac.md
+        - DrAC: api_docs/agent/drac.md
+        - DrDAAC: api_docs/agent/drdaac.md
+        - PPG: api_docs/agent/ppg.md
+        - IMPALA: api_docs/agent/impala.md
+
+    - Xploit:
+      - policy: 
+        - OnPolicySharedActorCritic: api_docs/xploit/policy/on_policy_shared_actor_critic.md
+        - OnPolicyDecoupledActorCritic: api_docs/xploit/policy/on_policy_decoupled_actor_critic.md
+        - OffPolicyDoubleQNetwork: api_docs/xploit/policy/off_policy_double_qnetwork.md
+        - OffPolicyDoubleActorDoubleCritic: api_docs/xploit/policy/off_policy_double_actor_double_critic.md
+        - OffPolicyDetActorDoubleCritic: api_docs/xploit/policy/off_policy_det_actor_double_critic.md
+        - OffPolicyStochActorDoubleCritic: api_docs/xploit/policy/off_policy_stoch_actor_double_critic.md
+        - DistributedActorLearner: api_docs/xploit/policy/distributed_actor_learner.md
+
+      - encoder:
+        - EspeholtResidualEncoder: api_docs/xploit/encoder/espeholt_residual_encoder.md
+        - MnihCnnEncoder: api_docs/xploit/encoder/mnih_cnn_encoder.md
+        - TassaCnnEncoder: api_docs/xploit/encoder/tassa_cnn_encoder.md
+        - PathakCnnEncoder: api_docs/xploit/encoder/pathak_cnn_encoder.md
+        - VanillaMlpEncoder: api_docs/xploit/encoder/vanilla_mlp_encoder.md
+        - IdentityEncoder: api_docs/xploit/encoder/identity_encoder.md
+        - RaffinCombinedEncoder: api_docs/xploit/encoder/raffin_combined_encoder.md
+
+      - storage:
+        - VanillaDistributedStorage: api_docs/xploit/storage/vanilla_distributed_storage.md
+        - VanillaRolloutStorage: api_docs/xploit/storage/vanilla_rollout_storage.md
+        - VanillaReplayStorage: api_docs/xploit/storage/vanilla_replay_storage.md
+        - DictRolloutStorage: api_docs/xploit/storage/dict_rollout_storage.md
+        - DictReplayStorage: api_docs/xploit/storage/dict_replay_storage.md
+        - NStepReplayStorage: api_docs/xploit/storage/nstep_replay_storage.md
+        - PrioritizedReplayStorage: api_docs/xploit/storage/prioritized_replay_storage.md
+        - HerReplayStorage: api_docs/xploit/storage/her_replay_storage.md
+
+    - Xplore:
+      - reward:
+        - PseudoCounts: api_docs/xplore/reward/pseudo_counts.md
+        - ICM: api_docs/xplore/reward/icm.md
+        - RND: api_docs/xplore/reward/rnd.md
+        - GIRM: api_docs/xplore/reward/girm.md
+        - NGU: api_docs/xplore/reward/ngu.md
+        - RIDE: api_docs/xplore/reward/ride.md
+        - RE3: api_docs/xplore/reward/re3.md
+        - RISE: api_docs/xplore/reward/rise.md
+        - REVD: api_docs/xplore/reward/revd.md
+
+      - augmentation:
+        - GaussianNoise: api_docs/xplore/augmentation/gaussian_noise.md
+        - RandomAmplitudeScaling: api_docs/xplore/augmentation/random_amplitude_scaling.md
+        - GrayScale: api_docs/xplore/augmentation/grayscale.md
+        - Identity: api_docs/xplore/augmentation/identity.md
+        - RandomColorJitter: api_docs/xplore/augmentation/random_colorjitter.md
+        - RandomConvolution: api_docs/xplore/augmentation/random_convolution.md
+        - RandomCrop: api_docs/xplore/augmentation/random_crop.md
+        - RandomCutout: api_docs/xplore/augmentation/random_cutout.md
+        - RandomCutoutColor: api_docs/xplore/augmentation/random_cutoutcolor.md
+        - RandomFlip: api_docs/xplore/augmentation/random_flip.md
+        - RandomRotate: api_docs/xplore/augmentation/random_rotate.md
+        - RandomShift: api_docs/xplore/augmentation/random_shift.md
+        - RandomTranslate: api_docs/xplore/augmentation/random_translate.md
+
+      - distribution:
+        - Bernoulli: api_docs/xplore/distribution/bernoulli.md
+        - Categorical: api_docs/xplore/distribution/categorical.md
+        - MultiCategorical: api_docs/xplore/distribution/multi_categorical.md
+        - DiagonalGaussian: api_docs/xplore/distribution/diagonal_gaussian.md
+        - SquashedNormal: api_docs/xplore/distribution/squashed_normal.md
+        - NormalNoise: api_docs/xplore/distribution/normal_noise.md
+        - OrnsteinUhlenbeckNoise: api_docs/xplore/distribution/ornstein_uhlenbeck_noise.md
+        - TruncatedNormalNoise: api_docs/xplore/distribution/truncated_normal_noise.md
+    
+    - Hub: 
+      - Atari: api_docs/hub/atari.md
+      - DMControl: api_docs/hub/dmc.md
+      - Procgen: api_docs/hub/procgen.md
+      - MiniGrid: api_docs/hub/minigrid.md
+    
+    - Env:
+      - Packaged Environments:
+        - make_atari_env: api_docs/env/atari/__init__.md
+        - make_bullet_env: api_docs/env/bullet/__init__.md
+        - make_dmc_env: api_docs/env/dmc/__init__.md
+        - make_procgen_env: api_docs/env/procgen/__init__.md
+        - make_envpool_atari_env: api_docs/env/atari/__init__.md
+        - make_envpool_procgen_env: api_docs/env/procgen/__init__.md
+      - make_rllte_env: api_docs/env/utils.md
+    
+    - Evaluation:
+      - Comparison: api_docs/evaluation/comparison.md
+      - Performance: api_docs/evaluation/performance.md
+      - Visualization: api_docs/evaluation/visualization.md
+
+  - Hub: hub.md
+  - Copilot: copilot.md

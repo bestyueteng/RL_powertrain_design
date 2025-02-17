@@ -1,0 +1,611 @@
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation')" style="font-weight:bold">evaluation</a>
+A system named '<a href="matlab:open_system ('VehiclePowertrain')">VehiclePowertrain</a>' already exists
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method); - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',42,'name','evaluation'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m','line',45,'name','test')]);">Show complete stack trace</a>
+} 
+test
+
+num_tc =
+
+     2
+
+Simulation stopped due to Battery Overload.
+time
+Simulation stopped due to Battery Overload.
+time
+Simulation stopped due to Battery Overload.
+time
+Simulation stopped due to Battery Overload.
+time
+Simulation stopped due to Battery Overload.
+time
+Simulation stopped due to Battery Overload.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization')" style="font-weight:bold">control_optimization</a>
+Program interruption (Ctrl-C) has been detected.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+        func = @(x)control_optimization(x,comtype,DSM,modelName);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+    f = funfcn(x,varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 60)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',60,0)">line 60</a>)
+                [V_result,results] = fminsearch(func,x_init,options);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method); - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m','line',137,'name','control_optimization'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',54,'name','evaluation>@(x)control_optimization(x,comtype,DSM,modelName)'),struct('file','C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m','line',284,'name','fminsearch'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',60,'name','evaluation'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m','line',45,'name','test')]);">Show complete stack trace</a>
+} 
+test
+
+num_tc =
+
+     2
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization')" style="font-weight:bold">control_optimization</a>
+Program interruption (Ctrl-C) has been detected.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 53)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',53,0)">line 53</a>)
+        func = @(x)control_optimization(x,comtype,DSM,modelName);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 403)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',403,0)">line 403</a>)
+                    fv(j)  = funfcn(x,varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 59)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',59,0)">line 59</a>)
+                evalc('[V_result,results] = fminsearch(func,x_init,options);')
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method); - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m','line',137,'name','control_optimization'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',53,'name','evaluation>@(x)control_optimization(x,comtype,DSM,modelName)'),struct('file','C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m','line',403,'name','fminsearch'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',59,'name','evaluation'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m','line',45,'name','test')]);">Show complete stack trace</a>
+} 
+test
+
+num_tc =
+
+     2
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization')" style="font-weight:bold">control_optimization</a>
+Error in '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_12/Detect  battery full//empty/MATLAB Function2','error')">VehiclePowertrain/Component_12/Detect  battery full//empty/MATLAB Function2</a>' while executing C MEX S-function 'sf_sfun',
+(mdlSetInputPortComplexSignal), at time 0.0.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 53)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',53,0)">line 53</a>)
+        func = @(x)control_optimization(x,comtype,DSM,modelName);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 343)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',343,0)">line 343</a>)
+    fxr = funfcn(x,varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 59)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',59,0)">line 59</a>)
+                [V_result,results] = evalc('fminsearch(func,x_init,options);');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method); - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m','line',137,'name','control_optimization'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',53,'name','evaluation>@(x)control_optimization(x,comtype,DSM,modelName)'),struct('file','C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m','line',343,'name','fminsearch'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',59,'name','evaluation'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m','line',45,'name','test')]);">Show complete stack trace</a>
+Caused by:
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization')" style="font-weight:bold">control_optimization</a>
+    Program interruption (Ctrl-C) has been detected. - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m','line',137,'name','control_optimization'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',53,'name','evaluation>@(x)control_optimization(x,comtype,DSM,modelName)'),struct('file','C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m','line',343,'name','fminsearch'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',59,'name','evaluation'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m','line',45,'name','test')]);">Show complete stack trace</a>
+} 
+test
+
+num_tc =
+
+     2
+
+{Index exceeds the number of array elements. Index must not exceed 0.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 35)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',35,0)">line 35</a>)
+            set_param([modelName, '/Component_', num2str(i)],'gear_ratio',num2str(x(num_var)));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 70)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',70,0)">line 70</a>)
+        total_cost = control_optimization(V_result,comtype,DSM,modelName);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method);
+} 
+opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',35,0)
+clear all
+clc
+test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation')" style="font-weight:bold">evaluation</a>
+A system named '<a href="matlab:open_system ('VehiclePowertrain')">VehiclePowertrain</a>' already exists
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method); - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',42,'name','evaluation'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m','line',45,'name','test')]);">Show complete stack trace</a>
+} 
+test
+
+num_tc =
+
+     2
+
+{Index exceeds the number of array elements. Index must not exceed 0.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 35)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',35,0)">line 35</a>)
+            set_param([modelName, '/Component_', num2str(i)],'gear_ratio',num2str(x(num_var)));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 71)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',71,0)">line 71</a>)
+        total_cost = control_optimization(V_result,comtype,DSM,modelName);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method);
+} 
+test
+
+num_tc =
+
+     2
+
+[Warning: Could not add line from Component_torque_coupler_ to Component_4: Invalid Simulink object name:
+'Component_torque_coupler_/5'.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 124)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',124,0)">line 124</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Electric_Power_Link_16 to Component_13: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 383)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',383,0)">line 383</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+test
+
+num_tc =
+
+     2
+
+[Warning: Could not add line from Component_torque_coupler_ to Component_4: Invalid Simulink object name:
+'Component_torque_coupler_/5'.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 124)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',124,0)">line 124</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Electric_Power_Link_16 to Component_13: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 383)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',383,0)">line 383</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization')" style="font-weight:bold">control_optimization</a>
+Manual Gear Box block (mask) does not have a parameter named 'i_7'
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+        func = @(x)control_optimization(x,comtype,DSM,modelName);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 216)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',216,0)">line 216</a>)
+fv(:,1) = funfcn(x,varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+                [V_result,results] = fminsearch(func,x_init,options);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method); - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m','line',21,'name','control_optimization'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',54,'name','evaluation>@(x)control_optimization(x,comtype,DSM,modelName)'),struct('file','C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m','line',216,'name','fminsearch'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',61,'name','evaluation'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m','line',45,'name','test')]);">Show complete stack trace</a>
+} 
+test
+
+num_tc =
+
+     2
+
+[Warning: Could not add line from Component_torque_coupler_ to Component_4: Invalid Simulink object name:
+'Component_torque_coupler_/5'.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 124)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',124,0)">line 124</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Electric_Power_Link_16 to Component_13: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 383)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',383,0)">line 383</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+
+num_of_gears =
+
+     3
+
+
+num_of_gears =
+
+   300
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization')" style="font-weight:bold">control_optimization</a>
+Manual Gear Box block (mask) does not have a parameter named 'i_7'
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+        func = @(x)control_optimization(x,comtype,DSM,modelName);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 216)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',216,0)">line 216</a>)
+fv(:,1) = funfcn(x,varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+                [V_result,results] = fminsearch(func,x_init,options);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method); - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m','line',22,'name','control_optimization'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',54,'name','evaluation>@(x)control_optimization(x,comtype,DSM,modelName)'),struct('file','C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m','line',216,'name','fminsearch'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',61,'name','evaluation'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m','line',45,'name','test')]);">Show complete stack trace</a>
+} 
+test
+
+num_tc =
+
+     2
+
+[Warning: Could not add line from Component_torque_coupler_ to Component_4: Invalid Simulink object name:
+'Component_torque_coupler_/5'.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 124)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',124,0)">line 124</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Electric_Power_Link_16 to Component_13: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 383)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',383,0)">line 383</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+
+num_of_gears =
+
+     3
+
+
+num_of_gears =
+
+     3
+
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' is reading from the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' before any blocks have written to this entire region of memory at time 0.0. For
+performance reasons, occurrences of this diagnostic for this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 216)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',216,0)">line 216</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Write','error')">VehiclePowertrain/Component_13/Data Store Write</a>' is writing to the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' but the block(s) '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' have already
+read from a portion or the entire region of this memory at time 0.0. For performance reasons, occurrences of this diagnostic for
+this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 216)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',216,0)">line 216</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Division by zero in '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_14/Product','error')">VehiclePowertrain/Component_14/Product</a>'
+Suggested Actions:
+    •  - <a href="matlab:Simulink.SuppressedDiagnostic({'VehiclePowertrain/Component_14/Product'},'Simulink:blocks:DivideByZero');">Suppress</a>
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 216)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',216,0)">line 216</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+
+num_of_gears =
+
+    3.1500
+
+
+num_of_gears =
+
+     3
+
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' is reading from the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' before any blocks have written to this entire region of memory at time 0.0. For
+performance reasons, occurrences of this diagnostic for this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Write','error')">VehiclePowertrain/Component_13/Data Store Write</a>' is writing to the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' but the block(s) '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' have already
+read from a portion or the entire region of this memory at time 0.0. For performance reasons, occurrences of this diagnostic for
+this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Division by zero in '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_14/Product','error')">VehiclePowertrain/Component_14/Product</a>'
+Suggested Actions:
+    •  - <a href="matlab:Simulink.SuppressedDiagnostic({'VehiclePowertrain/Component_14/Product'},'Simulink:blocks:DivideByZero');">Suppress</a>
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+
+num_of_gears =
+
+     3
+
+
+num_of_gears =
+
+     3
+
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' is reading from the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' before any blocks have written to this entire region of memory at time 0.0. For
+performance reasons, occurrences of this diagnostic for this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Write','error')">VehiclePowertrain/Component_13/Data Store Write</a>' is writing to the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' but the block(s) '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' have already
+read from a portion or the entire region of this memory at time 0.0. For performance reasons, occurrences of this diagnostic for
+this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Division by zero in '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_14/Product','error')">VehiclePowertrain/Component_14/Product</a>'
+Suggested Actions:
+    •  - <a href="matlab:Simulink.SuppressedDiagnostic({'VehiclePowertrain/Component_14/Product'},'Simulink:blocks:DivideByZero');">Suppress</a>
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+
+num_of_gears =
+
+     3
+
+
+num_of_gears =
+
+     3
+
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' is reading from the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' before any blocks have written to this entire region of memory at time 0.0. For
+performance reasons, occurrences of this diagnostic for this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Write','error')">VehiclePowertrain/Component_13/Data Store Write</a>' is writing to the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' but the block(s) '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' have already
+read from a portion or the entire region of this memory at time 0.0. For performance reasons, occurrences of this diagnostic for
+this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Division by zero in '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_14/Product','error')">VehiclePowertrain/Component_14/Product</a>'
+Suggested Actions:
+    •  - <a href="matlab:Simulink.SuppressedDiagnostic({'VehiclePowertrain/Component_14/Product'},'Simulink:blocks:DivideByZero');">Suppress</a>
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+
+num_of_gears =
+
+     3
+
+
+num_of_gears =
+
+     3
+
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' is reading from the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' before any blocks have written to this entire region of memory at time 0.0. For
+performance reasons, occurrences of this diagnostic for this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Write','error')">VehiclePowertrain/Component_13/Data Store Write</a>' is writing to the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' but the block(s) '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' have already
+read from a portion or the entire region of this memory at time 0.0. For performance reasons, occurrences of this diagnostic for
+this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Division by zero in '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_14/Product','error')">VehiclePowertrain/Component_14/Product</a>'
+Suggested Actions:
+    •  - <a href="matlab:Simulink.SuppressedDiagnostic({'VehiclePowertrain/Component_14/Product'},'Simulink:blocks:DivideByZero');">Suppress</a>
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+
+num_of_gears =
+
+     3
+
+
+num_of_gears =
+
+     3
+
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' is reading from the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' before any blocks have written to this entire region of memory at time 0.0. For
+performance reasons, occurrences of this diagnostic for this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Write','error')">VehiclePowertrain/Component_13/Data Store Write</a>' is writing to the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' but the block(s) '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' have already
+read from a portion or the entire region of this memory at time 0.0. For performance reasons, occurrences of this diagnostic for
+this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Division by zero in '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_14/Product','error')">VehiclePowertrain/Component_14/Product</a>'
+Suggested Actions:
+    •  - <a href="matlab:Simulink.SuppressedDiagnostic({'VehiclePowertrain/Component_14/Product'},'Simulink:blocks:DivideByZero');">Suppress</a>
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+
+num_of_gears =
+
+     3
+
+
+num_of_gears =
+
+     3
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization')" style="font-weight:bold">control_optimization</a>
+Model compilation aborted.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+        func = @(x)control_optimization(x,comtype,DSM,modelName);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+    f = funfcn(x,varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+                [V_result,results] = fminsearch(func,x_init,options);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method); - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m','line',138,'name','control_optimization'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',54,'name','evaluation>@(x)control_optimization(x,comtype,DSM,modelName)'),struct('file','C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m','line',284,'name','fminsearch'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',61,'name','evaluation'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m','line',45,'name','test')]);">Show complete stack trace</a>
+} 
+set_default_value
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('set_default_value', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\utils\set_default_value.m', 8)" style="font-weight:bold">set_default_value</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\utils\set_default_value.m',8,0)">line 8</a>)
+    switch optimizing_method
+} 
+test
+
+num_tc =
+
+     2
+
+[Warning: Could not add line from Component_torque_coupler_ to Component_4: Invalid Simulink object name:
+'Component_torque_coupler_/5'.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 124)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',124,0)">line 124</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Component_2 to Component_7: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 193)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',193,0)">line 193</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Could not add line from Electric_Power_Link_16 to Component_13: The destination port already has a line connection] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('create_connections', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m', 383)" style="font-weight:bold">create_connections</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\create_connections.m',383,0)">line 383</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 52)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',52,0)">line 52</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+
+num_of_gears =
+
+     3
+
+
+num_of_gears =
+
+     3
+
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' is reading from the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' before any blocks have written to this entire region of memory at time 0.0. For
+performance reasons, occurrences of this diagnostic for this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 216)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',216,0)">line 216</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: The block '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Write','error')">VehiclePowertrain/Component_13/Data Store Write</a>' is writing to the data store
+'<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Memory','error')">VehiclePowertrain/Component_13/Data Store Memory</a>' but the block(s) '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_13/Data Store Read2','error')">VehiclePowertrain/Component_13/Data Store Read2</a>' have already
+read from a portion or the entire region of this memory at time 0.0. For performance reasons, occurrences of this diagnostic for
+this memory at other simulation time steps will be suppressed.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 216)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',216,0)">line 216</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+[Warning: Division by zero in '<a href="matlab:open_and_hilite_hyperlink ('VehiclePowertrain/Component_14/Product','error')">VehiclePowertrain/Component_14/Product</a>'
+Suggested Actions:
+    •  - <a href="matlab:Simulink.SuppressedDiagnostic({'VehiclePowertrain/Component_14/Product'},'Simulink:blocks:DivideByZero');">Suppress</a>
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m', 138)" style="font-weight:bold">control_optimization</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m',138,0)">line 138</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 216)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',216,0)">line 216</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)] 
+
+num_of_gears =
+
+    3.1500
+
+
+num_of_gears =
+
+     3
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('control_optimization')" style="font-weight:bold">control_optimization</a>
+Model compilation aborted.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation>@(x)control_optimization(x,comtype,DSM,modelName)', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 54)" style="font-weight:bold">evaluation>@(x)control_optimization(x,comtype,DSM,modelName)</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',54,0)">line 54</a>)
+        func = @(x)control_optimization(x,comtype,DSM,modelName);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m', 284)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m',284,0)">line 284</a>)
+    f = funfcn(x,varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluation', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m', 61)" style="font-weight:bold">evaluation</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m',61,0)">line 61</a>)
+                [V_result,results] = fminsearch(func,x_init,options);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m', 45)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m',45,0)">line 45</a>)
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method); - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\control_optimization.m','line',138,'name','control_optimization'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',54,'name','evaluation>@(x)control_optimization(x,comtype,DSM,modelName)'),struct('file','C:\Program Files\MATLAB\R2023a\toolbox\matlab\optimfun\fminsearch.m','line',284,'name','fminsearch'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\evaluation.m','line',61,'name','evaluation'),struct('file','C:\Users\bestt\OneDrive - TU Eindhoven\Desktop\graduation project\matlab_code\topology_to_model\test.m','line',45,'name','test')]);">Show complete stack trace</a>
+} 
