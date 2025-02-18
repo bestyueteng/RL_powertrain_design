@@ -27,7 +27,7 @@ def get_performance(component_library, DSM, component_class,component_type, opt_
     version = eng.version()
     print(matlab.engine.__file__)
 
-    eng.addpath(r'/mech001.mnt/home/20223748/code_hpc/topology_to_model/', nargout=0)
+    # eng.addpath(r'/mech001.mnt/home/20223748/code_hpc/topology_to_model/', nargout=0)
     total_cost = eng.evaluation(component_library[0], component_library[1], component_library[2], DSM, component_class,component_type, opt_method,opt_tol)
     return total_cost
 

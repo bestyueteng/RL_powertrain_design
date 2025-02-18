@@ -74,7 +74,7 @@ def main():
     ]
     
     if os.path.exists(args.local_model_save_name):
-        os.remove(path)
+        os.remove(args.local_model_save_name)
     # training
     if args.algorithm in ["PPO", "REPPO", "MASKPPO"]:
         model = training_ppo(args, component_library, component_class, component_type, wandb_callback, run, logger)

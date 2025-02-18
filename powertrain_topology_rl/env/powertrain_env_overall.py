@@ -70,10 +70,6 @@ class PowertrainEnv_overall(gym.Env):
         
         self.constraints = generate_constraints(self.node_classes, self.node_types, self.max_components)
         self.check_list = generate_check_list(self.node_classes, self.node_types) # for power flow constraints
-        
-        self.dsm_list = []
-        self.performance_list = []
-        self.random_dsm_list = []
                 
         self.reset()
 
@@ -90,9 +86,6 @@ class PowertrainEnv_overall(gym.Env):
             self.new_components_library = dict_to_matrix(self.new_components_library)
             self.num_of_instances = self.new_components_library[2]
             
-            for matrix in self.dsm_list:
-                if all(matrix[i][j] == 0 for i in self.invalid_row for j in self.invalid_row):
-                    self.random_dsm_list.append(matrix)
             self.random_dsm_list = partial_init(self.components, self.power_types, self.random_dsm, self.valid_row)
         
         else:
@@ -107,9 +100,6 @@ class PowertrainEnv_overall(gym.Env):
             self.new_components_library = dict_to_matrix(self.new_components_library)
             self.num_of_instances = self.new_components_library[2]
             
-            for matrix in self.dsm_list:
-                if all(matrix[i][j] == 0 for i in self.invalid_row for j in self.invalid_row):
-                    self.random_dsm_list.append(matrix)
             self.random_dsm_list = partial_init(self.components, self.power_types, self.random_dsm, self.valid_row)
             
         # split training
