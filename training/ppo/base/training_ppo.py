@@ -96,15 +96,13 @@ def training_ppo(args, component_library, component_class, component_type, wandb
         else:
             # Feature extractor module
             if args.extract_features == "gnn":
-                policy_kwargs = dict(
-                        features_extractor_class=CustomCombinedExtractor_GNN,
-                        )
+                features_extractor_class=CustomCombinedExtractor_GNN
             elif args.extract_features == "mlp":
-                policy_kwargs = dict(
-                        features_extractor_class=CustomCombinedExtractor_MLP,
-                        )
+                features_extractor_class=CustomCombinedExtractor_MLP
             else:
-                policy_kwargs = dict(activation_fn=activation_fn, net_arch=dict(pi=[64,128,128], vf=[64,128,128]))
+                features_extractor_class = None
+                
+            policy_kwargs = dict(features_extractor_class=features_extractor_class, activation_fn=activation_fn, net_arch=dict(pi=[64,128,128], vf=[64,128,128]))
             
             # Base algorithm
             if args.algorithm == "PPO":

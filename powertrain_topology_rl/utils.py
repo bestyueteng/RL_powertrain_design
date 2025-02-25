@@ -22,13 +22,13 @@ def structure_components(component_library, component_class, component_type):
     
     return components
 
-def get_performance(component_library, DSM, component_class,component_type, opt_method='fminsearch',opt_tol=0.5):
+def get_performance(component_library, DSM, component_class,component_type, performance_req, opt_method='fminsearch',opt_tol=0.5):
     eng = matlab.engine.start_matlab()
     version = eng.version()
     print(matlab.engine.__file__)
 
     # eng.addpath(r'/mech001.mnt/home/20223748/code_hpc/topology_to_model/', nargout=0)
-    total_cost = eng.evaluation(component_library[0], component_library[1], component_library[2], DSM, component_class,component_type, opt_method,opt_tol)
+    total_cost = eng.evaluation(component_library[0], component_library[1], component_library[2], DSM, component_class,component_type,performance_req, opt_method,opt_tol)
     return total_cost
 
 
@@ -735,5 +735,3 @@ def map_flow_to_topology(powerflows: np.ndarray):
             adjacency_matrix[end_idx][start_idx] = 1
 
     return component_list, adjacency_matrix
-
-    

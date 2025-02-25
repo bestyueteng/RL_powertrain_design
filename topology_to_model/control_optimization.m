@@ -1,4 +1,4 @@
-function V_result = control_optimization(x,comtype,DSM,modelName,componentStruct)
+function V_result = control_optimization(x,comtype,DSM,modelName,componentStruct,performance_req)
 
 try
 %% Define Global variables
@@ -12,13 +12,12 @@ global z_result
 sys_name = 'VehiclePowertrain';
 load_system(sys_name);
 %% Set constrains
-req      = {8, 200, 0.1993, [0.1,50]};    % acc time [s], max speed [km/h], gradability_ss [%], gradability_speed [%, km/h]
-acc_req   = req{1};    % acceleration time requirement [s]
-vmax_req = req{2}/3.6; % top speed requirement [m/s]
-grad_ss_req     = req{3};     % Gradability [%]
-gradspeed_req = req{4};
-gradspeed_grad_req = gradspeed_req(1);
-gradspeed_speed_req = gradspeed_req(2);
+req      = performance_req;    % acc time [s], max speed [km/h], gradability_ss [%], gradability_speed [%, km/h]
+acc_req   = req(1);    % acceleration time requirement [s]
+vmax_req = req(2)/3.6; % top speed requirement [m/s]
+grad_ss_req     = req(3);     % Gradability [%]
+gradspeed_grad_req = req(4);
+gradspeed_speed_req = req(5);
 
 penalty_cost = 1e6;
 %% Set actual optimization values

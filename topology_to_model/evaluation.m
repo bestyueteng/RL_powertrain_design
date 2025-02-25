@@ -29,13 +29,12 @@
 % ];
 
 
-function total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method, opt_tol)
+function total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,performance_req,optimizing_method, opt_tol)
     component_library = table(ComponentNumber, TypeOfComponent, NumberOfInstances); % For Python
     warning('on','all');
     clc;
 
     % try
-        model_scale = {1, 1, 2, 2, 2, 2, 100, 90, 0, 0};
     
         % Initialize Simulink model
         modelName = 'VehiclePowertrain';
@@ -54,7 +53,7 @@ function total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstanc
         % create_blocks(comclass, comtype, comconnectionstype, comconnectionsinstance, modelName);
         create_connections(comclass, comtype, Component_struct, comconnectionsinstance, modelName, DSM, comconnectionstype);
         scaling(modelName, comtype, DSM, Component_struct); % Only for nr of gears （fixed)
-        func = @(x)control_optimization(x,comtype,DSM,modelName,Component_struct);
+        func = @(x)control_optimization(x,comtype,DSM,modelName,Component_struct,performance_req);
         x_init = set_default_value(DSM,comtype,optimizing_method);
         switch optimizing_method
             case 'fminsearch'
@@ -64,17 +63,18 @@ function total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstanc
                 % [V_result,results] = evalc('fminsearch(func,x_init,options);');
                 x_opt = fminsearch(func,x_init,options);
                 assignin('base','x_opt',x_opt);
-                total_cost = control_optimization(x_opt,comtype,DSM,modelName,Component_struct);
+                total_cost = control_optimization(x_opt,comtype,DSM,modelName,Component_struct,performance_req);
                 assignin('base','total_cost',total_cost);
             case 'pso'
                 lb = x_init{1};
                 ub = x_init{2};
                 options = optimoptions('particleswarm','SwarmSize',100,'FunctionTolerance',opt_tol, 'HybridFcn',@fmincon);
                 x_opt = particleswarm(func,length(lb),lb,ub,options);
-                total_cost = control_optimization(x_opt,comtype,DSM,modelName,Component_struct);
+                total_cost = control_optimization(x_opt,comtype,DSM,modelName,Component_struct,performance_req);
             otherwise
-                V_result = control_optimization(x_init,comtype,DSM,modelName,Component_struct);
+                V_result = control_optimization(x_init,comtype,DSM,modelName,Component_struct,performance_req);
                 total_cost = V_result;
+                disp(performance_req)
         end
 
         % total_cost = control_optimization(V_result,comtype,DSM,modelName,Component_struct);

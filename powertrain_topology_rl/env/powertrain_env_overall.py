@@ -23,7 +23,8 @@ class PowertrainEnv_overall(gym.Env):
                          render_mode="human",
                          random_dsm=1, 
                          init_dsm=None,
-                         required_instances=None):
+                         required_instances=None,
+                         performance_req=None):
         super(PowertrainEnv_overall, self).__init__()
 
         self.init_component_library_fix = component_library
@@ -36,6 +37,7 @@ class PowertrainEnv_overall(gym.Env):
         self.init_partial_topo = init_dsm
         self.required_instances = required_instances
 
+        self.performance_req = np.array([8, 200, 0.1993, 0.1, 50])
         self.components = structure_components(component_library, component_class, component_type)
         self.max_components = len(self.components)
         self.num_of_instances = self.component_library_fix[2]
@@ -255,7 +257,7 @@ class PowertrainEnv_overall(gym.Env):
         Placeholder for the DSM evaluation function.
         Returns a score based on the DSM topology.
         """
-        cost = get_performance(self.component_library_fix, self.DSM, self.component_class_fix, self.component_type_fix, self.opt_method)
+        cost = get_performance(self.component_library_fix, self.DSM, self.component_class_fix, self.component_type_fix, self.performance_req, self.opt_method)
         return 1e6 / cost - 1
         
     def normalize_reward(self, reward):

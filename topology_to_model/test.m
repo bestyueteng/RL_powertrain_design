@@ -8,7 +8,7 @@
 
 ComponentNumber = [1, 2, 2, 2, 3, 4, 5, 5, 5]; % 1: Vehicle Body; 2: Transmission; 3: Motor; 4: Storage; 5: Controller
 TypeOfComponent = [1, 1, 2, 3, 1, 1, 1, 2, 3]; 
-NumberOfInstances = [1, 1, 1, 1, 2, 1, 1, 1, 1];
+NumberOfInstances = [1 1 1 1 2 1 1 1 1];
 
 component_library = table(ComponentNumber, TypeOfComponent, NumberOfInstances);
 
@@ -16,19 +16,22 @@ component_class = ["VehicleBody", "GearSystems", "EnergyConverters", "EnergyStor
 component_type = {"Vehicle body", ["Final Drive", "Simple transmission", "Multispeed gearbox"], ...
     "Electric motor 1", "Battery", ["Torque Split", "Torque Coupler", "Electric Power Link"]};
 
-DSM = [[0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
-[0, 0, 0, 0, 0, 0, 0, 1, 1, 0] 
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 
-[0, 0, 0, 0, 0, 1, 0, 0, 1, 0] 
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 
-[0, 0, 0, 1, 0, 0, 1, 0, 0, 0] 
-[0, 0, 0, 0, 0, 1, 0, 0, 0, 0] 
-[1, 1, 0, 0, 0, 0, 0, 0, 0, 0] 
-[0, 1, 0, 1, 0, 0, 0, 0, 0, 0] 
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
+performance_req = [8, 200, 0.1993, 0.1,50];
+DSM =[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 1. 1. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+ [1. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 1. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0. 1. 0. 0. 0.]];
+
+
 optimizing_method = 'test';
 opt_tol = 0.5;
-total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,optimizing_method,opt_tol);
+total_cost = evaluation(ComponentNumber,TypeOfComponent,NumberOfInstances,DSM,component_class,component_type,performance_req, optimizing_method,opt_tol);
 
 
 
