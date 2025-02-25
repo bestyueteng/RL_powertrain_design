@@ -36,7 +36,8 @@ def testing_model(args, component_library, component_class, component_type, mode
                     component_library=component_library,
                     component_class=component_class,
                     component_type=component_type,
-                    required_instances=[1, 2, 3, 3, 3, 1, 1, 1, 1]
+                    required_instances=[1, 2, 3, 3, 3, 1, 1, 1, 1],
+                    performance_req = np.array([8, 200, 0.1993, 0.1, 50])
                 )
             else:
                 test_env = gym.make(

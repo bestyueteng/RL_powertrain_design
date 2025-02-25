@@ -36,8 +36,8 @@ class PowertrainEnv_overall(gym.Env):
         self.random_dsm = random_dsm
         self.init_partial_topo = init_dsm
         self.required_instances = required_instances
-
-        self.performance_req = np.array([8, 200, 0.1993, 0.1, 50])
+        self.performance_req = performance_req
+        
         self.components = structure_components(component_library, component_class, component_type)
         self.max_components = len(self.components)
         self.num_of_instances = self.component_library_fix[2]
@@ -62,7 +62,8 @@ class PowertrainEnv_overall(gym.Env):
         # observation space is the DSM and number of instances of each component
         self.observation_space = spaces.Dict({
             "DSM": spaces.MultiBinary(len(self.init_DSM.flatten())),
-            "Library": spaces.Box(low=0, high=4, shape=(len(self.num_of_instances),), dtype=np.int8)
+            "Library": spaces.Box(low=0, high=4, shape=(len(self.num_of_instances),), dtype=np.int8),
+            "performance_req": spaces.Box(low=0, high=200, shape=(5,), dtype=np.float64)
         })
 
         self.done_DSM = None
@@ -79,6 +80,14 @@ class PowertrainEnv_overall(gym.Env):
         self.DSM = self.init_DSM.copy()
         self.total_timestep = 0
         check = 0
+        if self.performance_req is not None:
+            self.performance_req = self.performance_req
+        else:
+            # randomize performance requirements
+            self.performance_req = np.zeros(5)
+            self._randomize_performance_req()
+            # self.performance_req = np.array([8, 200, 0.1993, 0.1, 50])
+        
         # Randomize num of instances
         if self.required_instances is None and self.init_partial_topo is None:
            
@@ -152,7 +161,7 @@ class PowertrainEnv_overall(gym.Env):
         library_flat = self.num_of_instances
         library_flat = np.array(library_flat, dtype=np.int8)
         # State vector
-        obs = {"DSM": DSM_flat, "Library": library_flat}
+        obs = {"DSM": DSM_flat, "Library": library_flat, "performance_req": self.performance_req}
         return obs
 
     def action_masks(self):
@@ -263,3 +272,18 @@ class PowertrainEnv_overall(gym.Env):
     def normalize_reward(self, reward):
         reward = reward - 30 / (100-30) # max evaluation is 100, min is 30
         return reward
+    
+    def _randomize_performance_req(self):
+        """
+        Randomize the performance requirements for the powertrain components.
+        """
+        # top speed (180, 200)
+        self.performance_req[0] = random.randint(180, 200)
+        # acceleration time (6,9)
+        self.performance_req[1] = random.randint(6, 9)
+        # gradability_ss (0.15, 0.1993)
+        self.performance_req[2] = random.uniform(0.15, 0.1993)
+        # gradability_fs (0.05, 0.15)
+        self.performance_req[3] = random.uniform(0.05, 0.15)
+        # gradability_fs_speed (40, 50)
+        self.performance_req[4] = random.randint(40, 50)
