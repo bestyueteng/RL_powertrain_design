@@ -20,8 +20,8 @@ module list
 
 export QT_QPA_PLATFORM=offscreen # Don't open Matlab when running Matlab Engine
 export LD_LIBRARY_PATH=$EBROOTMATLAB/bin/glnxa64:$LD_LIBRARY_PATH # Path for Matlab Engine
-export MATLABPATH=$MATLABPATH:/mech001.mnt/home/20223748/code_hpc/topology_to_model/ 
-export MATLABPATH=$MATLABPATH:/mech001.mnt/home/20223748/code_hpc/QSS_Toolbox_Full/
+export MATLABPATH=$MATLABPATH:/mech001.mnt/home/20223748/code_hpc_v2/topology_to_model/ # Path to your matlab code
+export MATLABPATH=$MATLABPATH:/mech001.mnt/home/20223748/code_hpc_v2/QSS_Toolbox_Full/
 #export PATH="$HOME/.local/bin:$PATH"
 
 # Install Python dependencies
