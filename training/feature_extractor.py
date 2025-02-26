@@ -157,6 +157,12 @@ class CustomCombinedExtractor_MLP(BaseFeaturesExtractor):
                     nn.ReLU(),
                 )
                 total_concat_size += 32
+            elif key == "performance_req":
+                extractors[key] = nn.Sequential(
+                    nn.Linear(subspace.shape[0], 32),
+                    nn.ReLU(),
+                )
+                total_concat_size += 32
 
         self.extractors = nn.ModuleDict(extractors)
         

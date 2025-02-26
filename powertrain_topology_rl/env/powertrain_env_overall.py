@@ -67,9 +67,10 @@ class PowertrainEnv_overall(gym.Env):
         })
 
         self.done_DSM = None
-        self.old_DSM = []  # Placeholder for the DSM before applying the action
+        self.history_result = []  # Placeholder for the DSM before applying the action
         self.old_evaluation_score = []
         self.old_action = None  # Placeholder for the last action applied
+        self.old_performance_req = None  # Placeholder for the last performance requirements
         
         self.constraints = generate_constraints(self.node_classes, self.node_types, self.max_components)
         self.check_list = generate_check_list(self.node_classes, self.node_types) # for power flow constraints
@@ -220,12 +221,14 @@ class PowertrainEnv_overall(gym.Env):
             # Check power flow constraints
             is_feasible = check_power_flow_completeness(self.DSM, self.check_list)
             if is_feasible:
-               
+
                 # Check if it is a duprecated DSM
-                for idx, old_DSM in enumerate(self.old_DSM): 
+                for idx, result in enumerate(self.history_result): 
+                    old_DSM = result[0]
+                    old_performance_req = result[1]
                     is_duprecated = check_same_topology(self.DSM, old_DSM, self.node_classes, self.node_types, self.component_type_fix)
-                    
-                    if is_duprecated:
+                    is_same_performance = np.array_equal(self.performance_req, old_performance_req)
+                    if is_duprecated and is_same_performance:
                         print("Repeated DSM found.")
                         done = True
                         old_idx = idx
@@ -234,12 +237,14 @@ class PowertrainEnv_overall(gym.Env):
                         reward = evaluation_score
                         # reward = self.normalize_reward(reward)
                         break
+                
                         
 
-                if not is_duprecated:
+                if not is_duprecated or not is_same_performance:
                     print("New DSM found.")
                     print("DSM:", self.DSM)
-                    self.old_DSM.append(self.DSM.copy())
+                    old_history = [self.DSM.copy(), self.performance_req.copy()]
+                    self.history_result.append(old_history)
                     evaluation_score = self.evaluate_DSM()
                     reward = evaluation_score
                     self.old_evaluation_score.append(evaluation_score)
