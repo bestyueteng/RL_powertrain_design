@@ -39,7 +39,7 @@ def main():
     component_library = {
         'Component number': [1, 2, 2, 2, 3, 4, 5, 5, 5],
         'Type of Components': [1, 1, 2, 3, 1, 1, 1, 2, 3],
-        'Number of Instances': [1, 3, 4, 4, 4, 1, 1, 1, 1]
+        'Number of Instances': [1, 2, 3, 3, 3, 1, 1, 1, 1]
     }
 
     # ----------------------------
@@ -396,7 +396,7 @@ def main():
             if var is not None:
                 connections_g_ts.append(var)
     sum_gb_conn_ts = sum(connections_g_ts)
-
+    
     connections_tc_ts = []
     for tc in torque_coupler_indices:
         for ts in torque_split_indices:
@@ -406,7 +406,6 @@ def main():
     sum_tc_conn_ts = sum(connections_tc_ts)
     
     sum_fd_g_tc_ts = 2 * sum_fd + sum_gb_conn_ts + sum_tc_conn_ts
-
     eq_2 = model.NewBoolVar("eq_2")
     eq_4 = model.NewBoolVar("eq_4")
 
@@ -448,27 +447,7 @@ def main():
                         val = self.Value(self.DSM[j, i])
                     row.append(val)
                 DSM_matrix.append(row)
-                # Optionally, print component usage and connections
-                used_status = self.Value(self.used[i])
-                if used_status:
-                    connections = []
-                    for j in range(self.num_components):
-                        if i < j:
-                            val = self.Value(self.DSM[i, j])
-                        elif j < i:
-                            val = self.Value(self.DSM[j, i])
-                        else:
-                            val = 0  # No self-connections
-                        if val:
-                            connections.append(j)
-                    connection_str = ', '.join([f"{j} ({self.component_names[j][0]}, {self.component_names[j][1]})" for j in connections])
-                    # print(f"Component {i} ({self.component_names[i][0]}, {self.component_names[i][1]}): Used=1, Connected to: {connection_str if connection_str else 'None'}")
-                else:
-                    pass
-                    # print(f"Component {i} ({self.component_names[i][0]}, {self.component_names[i][1]}): Used=0")
-            # print()
-            
-            # Append the DSM matrix to the list
+
             DSM_np = np.array(DSM_matrix)
             is_duplicate = False
             for existing_matrix in self.DSM_list:
@@ -481,6 +460,9 @@ def main():
                 # This is a unique solution, so store it and maybe print it
                 self.DSM_list.append(DSM_matrix)
                 self.solution_count += 1
+            
+            if len(self.DSM_list) & 100 == 0:
+                print("On working, ", len(self.DSM_list))
   
     # Instantiate the solver
     solver = cp_model.CpSolver()
@@ -495,34 +477,74 @@ def main():
     # Accessing the DSM List
     if solution_printer.DSM_list:
         component_library = dict_to_matrix(component_library)
+        performance_req_list = np.array([180,8,0.15,0.05,40], [190,7,0.17,0.1,45],[200,6,0.19,0.15,50]) # Three benchmarks for performance requirements
+
         performance_list = []
         dsm_per_pair = []
+        
         for idx, matrix in enumerate(solution_printer.DSM_list):
             matrix = np.array(matrix)
-            evaluation_score = get_performance(component_library, matrix, component_class, component_type, opt_method="pso")
+            evaluation_score = get_performance(component_library, matrix, component_class, component_type,performance_req_list[0], opt_method="fminsearch")
 
             evaluation_score = 1e6/evaluation_score - 1
             performance_list.append(evaluation_score)
             dsm_per_pair.append((matrix, evaluation_score))
 
         # generate a csv to store dsm_per_pair
-        with open("cp_3444.csv", "w") as f:
+        with open("cp_2333_180.csv", "w") as f:
+            writer = csv.writer(f)
+            writer.writerow(["DSM", "Performance"])
+            for pair in dsm_per_pair:
+                writer.writerow([pair[0], pair[1]])
+        
+        
+        performance_list = []
+        dsm_per_pair = []
+        
+        for idx, matrix in enumerate(solution_printer.DSM_list):
+            matrix = np.array(matrix)
+            evaluation_score = get_performance(component_library, matrix, component_class, component_type,performance_req_list[1], opt_method="fminsearch")
+
+            evaluation_score = 1e6/evaluation_score - 1
+            performance_list.append(evaluation_score)
+            dsm_per_pair.append((matrix, evaluation_score))
+
+        # generate a csv to store dsm_per_pair
+        with open("cp_2333_190.csv", "w") as f:
+            writer = csv.writer(f)
+            writer.writerow(["DSM", "Performance"])
+            for pair in dsm_per_pair:
+                writer.writerow([pair[0], pair[1]])
+        
+        performance_list = []
+        dsm_per_pair = []
+        
+        for idx, matrix in enumerate(solution_printer.DSM_list):
+            matrix = np.array(matrix)
+            evaluation_score = get_performance(component_library, matrix, component_class, component_type,performance_req_list[2], opt_method="fminsearch")
+
+            evaluation_score = 1e6/evaluation_score - 1
+            performance_list.append(evaluation_score)
+            dsm_per_pair.append((matrix, evaluation_score))
+
+        # generate a csv to store dsm_per_pair
+        with open("cp_2333_200.csv", "w") as f:
             writer = csv.writer(f)
             writer.writerow(["DSM", "Performance"])
             for pair in dsm_per_pair:
                 writer.writerow([pair[0], pair[1]])
 
-        best_idx = performance_list.index(max(performance_list))
-        print(f"Best DSM matrix found:")
-        print(solution_printer.DSM_list[best_idx])
+        # best_idx = performance_list.index(max(performance_list))
+        # print(f"Best DSM matrix found:")
+        # print(solution_printer.DSM_list[best_idx])
 
-        # Sort the index of DSM of performance from max to min
-        sorted_idx = np.argsort(performance_list)[::-1]
-        print("Performance of all DSMs:")
-        for idx in sorted_idx:
-            print(f"DSM: {performance_list[idx]}")
-            print(solution_printer.DSM_list[idx])
-            print("\n")
+        # # Sort the index of DSM of performance from max to min
+        # sorted_idx = np.argsort(performance_list)[::-1]
+        # print("Performance of all DSMs:")
+        # for idx in sorted_idx:
+            # print(f"DSM: {performance_list[idx]}")
+            # print(solution_printer.DSM_list[idx])
+            # print("\n")
         
 
 if __name__ == "__main__":

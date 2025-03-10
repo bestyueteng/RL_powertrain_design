@@ -202,6 +202,7 @@ class PowertrainEnv_overall(gym.Env):
     def step(self, action):
         truncated = False
         is_duprecated = False
+        is_same_performance = False
         # Decode action into edge_index and add_remove
         # edge_idx, add_remove = divmod(action, 2)
         from_node, to_node = self.possible_actions[action]
