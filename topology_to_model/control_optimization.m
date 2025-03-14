@@ -198,81 +198,85 @@ else
            
             % Check Acceleration
                 
-
-                % Run WLTP
-                delete_line(modelName, ['DC' '/' num2str(3)], ['VB' '/' num2str(3)]); 
-                set_param([modelName '/DC'], 'cyclenr', 'Europe: WLTP Class 3');
-                set_param([modelName '/DC'], 'slope_bool_cycle', 'off');
-                set_param([modelName '/VB'], 'slope_bool', 'off'); 
-                results_wltp = sim(sys_name,[],options);
-                assignin('base','results_wltp',results_wltp);
-    
-                % Object function
-                V_liter = 0;
-                cons_BT = 0;
-                bat_idx = 0;
-                fc_idx = 0;
-    
-                Cvb = 17000;              % Base vehicle cost
-                Cv = Cm +Cb + Cf +Cvb;        % Depreciation cost
-    
-                % Get sum fuel
-                for i = 1:length(comtype)
-                    if comtype(i) == 'Fuel Cell'
-                        if ~all(DSM(i, :) == 0)
-                            fc_idx = fc_idx + 1;
-                            para_string = ['V_liter' num2str(fc_idx)];
-                            V = results_wltp.(para_string);
-                            V_liter = V_liter + V(end); % [L/100km]
-                        end
-                    end
-                end
-                
-                % Get sum Bat
-                for i = 1:length(comtype)
-                    if comtype(i) == 'Battery'
-                        if ~all(DSM(i, :) == 0)
-                            bat_idx = bat_idx + 1;
-                            para_string = ['cons_BT' num2str(bat_idx)];
-                            bat = results_wltp.(para_string);
-                            cons_BT = cons_BT + bat(end); % [L/100km]
-                        end
-                    end
-                end
-                
-                dis = results_wltp.x; %[m]
-                % Check whether cycle could be finished exactly in N_sim computational steps;
-                % if cycle duration is less than N_sim, set fuel consumption to infinite
-                if length(dis) ~= 1801
-                     disp("time")
-                     V_result = penalty_cost;
-                
+                ta = cal_acc(sum_power*1000, m_total);
+                if ta >= acc_req
+                    V_result = penalty_cost;
+                    disp(ta);
                 else
-                    % disp("good")
-                    total_liter = V_liter * 23.25/100; %[L]
+                    % Run WLTP
+                    delete_line(modelName, ['DC' '/' num2str(3)], ['VB' '/' num2str(3)]); 
+                    set_param([modelName '/DC'], 'cyclenr', 'Europe: WLTP Class 3');
+                    set_param([modelName '/DC'], 'slope_bool_cycle', 'off');
+                    set_param([modelName '/VB'], 'slope_bool', 'off'); 
+                    results_wltp = sim(sys_name,[],options);
+                    assignin('base','results_wltp',results_wltp);
+        
+                    % Object function
+                    V_liter = 0;
+                    cons_BT = 0;
+                    bat_idx = 0;
+                    fc_idx = 0;
+        
+                    Cvb = 17000;              % Base vehicle cost
+                    Cv = Cm +Cb + Cf +Cvb;        % Depreciation cost
+        
+                    % Get sum fuel
+                    for i = 1:length(comtype)
+                        if comtype(i) == 'Fuel Cell'
+                            if ~all(DSM(i, :) == 0)
+                                fc_idx = fc_idx + 1;
+                                para_string = ['V_liter' num2str(fc_idx)];
+                                V = results_wltp.(para_string);
+                                V_liter = V_liter + V(end); % [L/100km]
+                            end
+                        end
+                    end
                     
-                    rho_h2 = 0.083; %[g/L]
+                    % Get sum Bat
+                    for i = 1:length(comtype)
+                        if comtype(i) == 'Battery'
+                            if ~all(DSM(i, :) == 0)
+                                bat_idx = bat_idx + 1;
+                                para_string = ['cons_BT' num2str(bat_idx)];
+                                bat = results_wltp.(para_string);
+                                cons_BT = cons_BT + bat(end); % [L/100km]
+                            end
+                        end
+                    end
                     
-                    total_mass = rho_h2 * total_liter / 1000; %[kg]
-                    % H1 = 33.33; % [kWh/kg]
-                    % ef = total_mass * H1; %[kwh]
+                    dis = results_wltp.x; %[m]
+                    % Check whether cycle could be finished exactly in N_sim computational steps;
+                    % if cycle duration is less than N_sim, set fuel consumption to infinite
+                    if length(dis) ~= 1801
+                        disp("time")
+                        V_result = penalty_cost;
                     
-                    dy = 20000; % [km]
-                    y = 5;
-                    cf = 12.95; %[euro/kg]
-                    dc = 23.25;
+                    else
+                        % disp("good")
+                        total_liter = V_liter * 23.25/100; %[L]
+                        
+                        rho_h2 = 0.083; %[g/L]
+                        
+                        total_mass = rho_h2 * total_liter / 1000; %[kg]
+                        % H1 = 33.33; % [kWh/kg]
+                        % ef = total_mass * H1; %[kwh]
+                        
+                        dy = 20000; % [km]
+                        y = 5;
+                        cf = 12.95; %[euro/kg]
+                        dc = 23.25;
+                        
+                        Ce_h2 = cf*total_mass*dy*y/dc;
                     
-                    Ce_h2 = cf*total_mass*dy*y/dc;
-                
-                    Es = cons_BT * 23.25/100; %[kwh]
-                    ce = 0.5; %[euro/kwh]
-                    Ce_bt = ce*Es*dy*y/dc;
-                
-                    C = 0.5*Cv+Ce_bt+Ce_h2;
-                    V_result = C;
-                    V_result
+                        Es = cons_BT * 23.25/100; %[kwh]
+                        ce = 0.5; %[euro/kwh]
+                        Ce_bt = ce*Es*dy*y/dc;
+                    
+                        C = 0.5*Cv+Ce_bt+Ce_h2;
+                        V_result = C;
+                        V_result
+                    end
                 end
-            
         end
     end
 end
